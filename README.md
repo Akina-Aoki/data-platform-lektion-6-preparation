@@ -1,4 +1,4 @@
-# demo_7 – FastAPI + PostgreSQL (JSONB)
+# Ingestion Preparation
 
 Small demo project for ingesting product data via FastAPI and storing raw JSON in PostgreSQL.
 Used later as a base for ETL and Pandas exercises.
@@ -75,3 +75,4 @@ POST /products/bulk
 ## Notes
 Raw data is stored unchanged in products_raw.payload (JSONB).
 This project is intentionally simple and used as a starting point for ETL.
+

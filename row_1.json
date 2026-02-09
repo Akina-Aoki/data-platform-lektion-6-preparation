@@ -1,0 +1,204 @@
+{
+    "id": "570e2320b147826561eca95c9dfc93a334f4d69d",
+    "label": "[]",
+    "access": null,
+    "larling": false,
+    "removed": false,
+    "trainee": false,
+    "duration": {
+        "label": "Tills vidare",
+        "concept_id": "a7uU_j21_mkL",
+        "legacy_ams_taxonomy_id": "1"
+    },
+    "employer": {
+        "url": null,
+        "name": "WOLF ENTERPRISES AB",
+        "email": null,
+        "workplace": "Food Partner ",
+        "phone_number": null,
+        "organization_number": "5592507106"
+    },
+    "headline": "Matbud till Pizzeria Campino i Norrköping",
+    "keywords": {
+        "enriched": {
+            "skill": [
+                "beställningar",
+                "körkort"
+            ],
+            "trait": [
+                "arbeta självständigt",
+                "ansvarstagande",
+                "servicekänsla"
+            ],
+            "compound": [
+                "matbud",
+                "budbilsförare",
+                "beställningar",
+                "körkort",
+                "östergötland",
+                "norrköping",
+                "sverige"
+            ],
+            "location": [
+                "östergötland",
+                "norrköping",
+                "sverige"
+            ],
+            "occupation": [
+                "matbud",
+                "budbilsförare"
+            ]
+        },
+        "extracted": {
+            "skill": [
+            ],
+            "employer": [
+                "wolf enterprises",
+                "food partner"
+            ],
+            "location": [
+                "norrköping",
+                "östergötlands län",
+                "sverige"
+            ],
+            "occupation": [
+                "distribution",
+                "budbilsförare",
+                "lager",
+                "övriga bil-, motorcykel- och cykelförare",
+                "transport"
+            ]
+        }
+    },
+    "logo_url": null,
+    "franchise": false,
+    "must_have": {
+        "skills": [
+        ],
+        "education": [
+        ],
+        "languages": [
+        ],
+        "education_level": [
+        ],
+        "work_experiences": [
+        ]
+    },
+    "timestamp": 1759096990839,
+    "occupation": [
+        {
+            "label": "Budbilsförare",
+            "concept_id": "PtiU_6mm_yyL",
+            "original_value": true,
+            "legacy_ams_taxonomy_id": "4332"
+        }
+    ],
+    "description": {
+        "text": "Om jobbet\nSom matbud är du företagets ansikte utåt. Du ansvarar för att leverera beställningar snabbt, säkert och med ett leende. Arbetet är flexibelt och passar dig som vill röra på dig, gillar frihet under ansvar och vill ha ett socialt jobb ute på vägarna. Vi söker dig som:\n    •    Är punktlig, ansvarstagande och har hög servicekänsla\n    •    Har körkort\n    •    Trivs med att arbeta självständigt men också vara en del av ett team\n    •    Har god lokalkännedom och gillar att vara ute i rörelse\n\n\nVi erbjuder:\n    •    Flexibla arbetstider – jobba heltid eller deltid\n    •    Möjlighet att själv påverka ditt schema\n    •    En dynamisk arbetsmiljö där ingen dag är den andra lik\n    •    Konkurrenskraftig ersättning och trygga villkor",
+        "needs": null,
+        "conditions": null,
+        "requirements": null,
+        "text_formatted": null,
+        "company_information": null
+    },
+    "external_id": null,
+    "original_id": "30079889",
+    "remote_work": false,
+    "salary_type": {
+        "label": "Fast månads- vecko- eller timlön",
+        "concept_id": "oG8G_9cW_nRf",
+        "legacy_ams_taxonomy_id": "1"
+    },
+    "source_type": "VIA_ANNONSERA",
+    "webpage_url": null,
+    "nice_to_have": {
+        "skills": [
+        ],
+        "education": [
+        ],
+        "languages": [
+        ],
+        "education_level": [
+        ],
+        "work_experiences": [
+        ]
+    },
+    "open_for_all": false,
+    "removed_date": null,
+    "scope_of_work": {
+        "max": 100,
+        "min": 100
+    },
+    "driving_license": [
+        {
+            "label": "B",
+            "concept_id": "VTK8_WRx_GcM",
+            "legacy_ams_taxonomy_id": "3"
+        }
+    ],
+    "employment_type": [
+        {
+            "label": "Vanlig anställning",
+            "concept_id": "PFZr_Syz_cUq",
+            "original_value": true,
+            "legacy_ams_taxonomy_id": "1"
+        }
+    ],
+    "hire_work_place": false,
+    "occupation_field": [
+        {
+            "label": "Transport, distribution, lager",
+            "concept_id": "ASGV_zcE_bWf",
+            "legacy_ams_taxonomy_id": "19"
+        }
+    ],
+    "occupation_group": [
+        {
+            "label": "Övriga bil-, motorcykel- och cykelförare",
+            "concept_id": "P7Ay_ooF_pri",
+            "legacy_ams_taxonomy_id": "8329"
+        }
+    ],
+    "publication_date": "2025-09-29T00:02:00",
+    "access_to_own_car": false,
+    "detected_language": "sv",
+    "workplace_address": {
+        "city": "NORRKÖPING",
+        "region": "Östergötlands län",
+        "country": "Sverige",
+        "postcode": "60232",
+        "coordinates": [
+            16.1894091952291,
+            58.5872359500933
+        ],
+        "region_code": "05",
+        "country_code": "199",
+        "municipality": "Norrköping",
+        "street_address": "Hantverkaregatan 23",
+        "municipality_code": "0581",
+        "region_concept_id": "oLT3_Q9p_3nn",
+        "country_concept_id": "i46j_HmG_v64",
+        "municipality_concept_id": "SYty_Yho_JAF"
+    },
+    "salary_description": null,
+    "working_hours_type": {
+        "label": "Heltid",
+        "concept_id": "6YE1_gAC_R2G",
+        "legacy_ams_taxonomy_id": "1"
+    },
+    "application_details": {
+        "url": null,
+        "email": null,
+        "other": null,
+        "via_af": false,
+        "reference": null,
+        "information": null
+    },
+    "experience_required": true,
+    "number_of_vacancies": 2,
+    "application_contacts": [
+    ],
+    "application_deadline": "2025-10-28T23:59:59",
+    "last_publication_date": "2025-10-28T23:59:59",
+    "driving_license_required": true
+}

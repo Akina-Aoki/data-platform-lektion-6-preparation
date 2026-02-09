@@ -1,5 +1,6 @@
 # Ingestion Preparation
 
+- **PgAdmin 4 Database name:** `my_database`
 Small demo project for ingesting product data via FastAPI and storing raw JSON in PostgreSQL.
 Used later as a base for ETL and Pandas exercises.
 
@@ -62,6 +63,8 @@ Open `app/main.py` and update the connection string:
 DATABASE_URL = "postgresql://postgres:DB_PASSWORD@localhost:5432/DB_NAME"
 ```
 
+#### MY PSQL PASSWORD: `Akina1996!`
+
 Example:
 ```python
 DATABASE_URL = "postgresql://postgres:secret@localhost:5432/my_database"
@@ -75,6 +78,7 @@ DATABASE_URL = "postgresql://postgres:secret@localhost:5432/my_database"
 
 ## Install dependencies
 - `pip install fastapi uvicorn psycopg[binary] psycopg_pool`
+
 - Expected output: `Successfully installed fastapi-0.128.5 psycopg-3.3.2 psycopg-binary-3.3.2 psycopg_pool-3.3.0`
 
 - Install the requirements `pip install -r requirements.txt`

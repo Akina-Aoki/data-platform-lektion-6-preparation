@@ -3,6 +3,33 @@
 Small demo project for ingesting product data via FastAPI and storing raw JSON in PostgreSQL.
 Used later as a base for ETL and Pandas exercises.
 
+# Restarting Vscode Operaitons
+## Activate venv
+- `source .venv/Scripts/activate`
+- validate: `where python`
+
+Run the API:
+```bash
+uv run uvicorn app.main:app --reload
+```
+
+- Expected Output:
+```
+INFO:     Started server process [3716]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+```
+
+## Open the localhost
+- `http://127.0.0.1:8000/docs`
+- **Check the terminal for any errors**
+- Open: POST /products
+- Press Try it out.
+
+------------------------------------------------
+
+# First time creation
+
 ## Clone
 ```bash
 git clone <REPO_URL>
@@ -10,16 +37,23 @@ cd <REPO_NAME>
 ```
 
 ## Environment (uv + .venv)
-This project uses uv and a local virtual environment.
+- This project uses uv and a local virtual environment.
 
 ```bash
 uv sync
 ```
 
+------------------------------------------------
+
+## Activate venv
+- `source .venv/Scripts/activate`
+- validate: `where python`
+
 Run the API:
 ```bash
 uv run uvicorn app.main:app --reload
 ```
+- If this fails, follow the **Activate venv to restart Vscode venv**
 
 ## Database configuration
 Open `app/main.py` and update the connection string:
@@ -33,6 +67,41 @@ Example:
 DATABASE_URL = "postgresql://postgres:secret@localhost:5432/my_database"
 ```
 
+-----------------------------------------------
+## Activate venv
+- `source .venv/Scripts/activate`
+- validate: `where python`
+
+## Install dependencies
+- `pip install fastapi uvicorn psycopg[binary] psycopg_pool`
+- Expected output: `Successfully installed fastapi-0.128.5 psycopg-3.3.2 psycopg-binary-3.3.2 psycopg_pool-3.3.0`
+
+- Install the requirements `pip install -r requirements.txt`
+- * Does not exists here
+
+## Sanity check for 
+```
+pip list | findstr fastapi
+pip list | findstr psycopg
+```
+
+## Restart VS Code kernel / interpreter
+- Very important.
+- Ctrl + Shift + P → Python: Select Interpreter → choose the one inside `.\.venv.\Scripts\python.exe`
+- Then reload the window.
+- Yellow warnings usually disappear immediately.
+
+## Run uvicorn
+Run the API:
+```bash
+uv run uvicorn app.main:app --reload
+```
+
+------------------------------------------------------------------------------------------------------------------------
+#  PgAdmin4
+- Open pgAdmin4
+![Create database and table pgadmin setup](assets/1.png)
+
 ## Database setup (pgAdmin4)
 Create a new database, then run:
 
@@ -44,8 +113,15 @@ CREATE TABLE IF NOT EXISTS products_raw (
 );
 ```
 
+## Open the localhost
+- `http://127.0.0.1:8000/docs`
+- Open: POST /products
+- Press Try it out.
+
+
 ## API usage
-POST /products
+- Use:
+- POST /products
 ```json
 {
   "name": "USB-C Cable",
@@ -54,6 +130,7 @@ POST /products
   "currency": "SEK"
 }
 ```
+- Expected KPI: `201 Created`
 
 POST /products/bulk
 ```json
@@ -70,9 +147,14 @@ POST /products/bulk
   { "name": "USB Hub", "price": 399.0, "quantity": 50, "currency": "SEK" }
 ]
 ```
+- Expected KPI: `201 Created`
 
 
 ## Notes
 Raw data is stored unchanged in products_raw.payload (JSONB).
 This project is intentionally simple and used as a starting point for ETL.
 
+## References
+- (Parquet File Format)[https://motherduck.com/learn-more/why-choose-parquet-table-file-format/]'
+
+- (Columnar Storage Guide)[https://motherduck.com/learn-more/columnar-storage-guide/]

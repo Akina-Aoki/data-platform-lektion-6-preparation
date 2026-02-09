@@ -4,7 +4,7 @@ from psycopg_pool import ConnectionPool
 
 from app.schema.product import ProductSchema
 
-DATABASE_URL = "postgresql://postgres:DB_PASSWORD@localhost:5432/DB_NAME"
+DATABASE_URL = "postgresql://postgres:Akina1996!@localhost:5432/my_database"
 app = FastAPI(title="demo_7")
 pool = ConnectionPool(DATABASE_URL)
 
@@ -18,9 +18,10 @@ def post_product(product: ProductSchema) -> ProductSchema:
     with pool.connection() as conn:
         with conn.transaction():
             conn.execute(
-                "INSERT INTO products_raw (payload) VALUES (%s)",
-                Json(product.model_dump()),
-            )
+    "INSERT INTO products_raw (payload) VALUES (%s)",
+    (Json(product.model_dump()),),
+)
+
 
     return product
 

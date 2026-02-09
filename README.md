@@ -30,7 +30,7 @@ INFO:     Application startup complete.
 
 # First time creation
 
-## Clone
+## Fork and Clone
 ```bash
 git clone <REPO_URL>
 cd <REPO_NAME>
@@ -68,6 +68,7 @@ DATABASE_URL = "postgresql://postgres:secret@localhost:5432/my_database"
 ```
 
 -----------------------------------------------
+# If first time creating the repo
 ## Activate venv
 - `source .venv/Scripts/activate`
 - validate: `where python`
@@ -149,6 +150,16 @@ POST /products/bulk
 ```
 - Expected KPI: `201 Created`
 
+## Now confirm the data actually landed
+- Go to pgAdmin → open Query Tool → run:
+
+```
+SELECT id, ingested_at, payload
+FROM products_raw
+ORDER BY id DESC;
+```
+- Expected Output: 
+![Confirm by querying a sample](assets/2.png)
 
 ## Notes
 Raw data is stored unchanged in products_raw.payload (JSONB).
